@@ -1,0 +1,40 @@
+export const BASE_URL = "https://spaces-backend.herokuapp.com/";
+
+export enum Colors {
+  PRIMARY = "#0C90D2",
+  SECONDARY = "#0E0E2C",
+  DARK_MODE_BASE = "#121212",
+  D_M_E_1 = "#161618",
+  D_M_E_2 = "#212124",
+  D_M_E_3 = "#818181",
+  D_M_E_4 = "#1C1C1E",
+  BACKGROUND_1 = "white",
+  TEXT1 = "#898989",
+  GREY = "#F8F9FB",
+  DARK2 = "#1E1E1E",
+  TEXT_DARK = "#FAFAFA",
+  FAILURE = "#EB5757",
+  WARNING = "#F2994A",
+  NOCOLOR = "transparent",
+  TEXT_DARK_MODE = "#E6E9ED",
+  BORDER_LIGHT_MODE = "#1824271A",
+  TEXT_LIGHT_MODE = "#182427",
+  GREY_2 = "#E6E9ED",
+}
+
+export enum Gilroy_FONTS {
+  FONT_Black = "FONT_Black",
+  FONT_Black_Italic = "FONT_Black_Italic",
+  FONT_Bold = "FONT_Bold",
+  FONT_Bold_Italic = "FONT_Bold_Italic",
+  FONT_Semi_Bold = "FONT_Semi_Bold",
+  FONT_Semi_Bold_Italic = "FONT_Semi_Bold_Italic",
+  FONT_Light = "FONT_Light",
+  FONT_Light_Italic = "FONT_Light_Italic",
+  FONT_Medium = "FONT_Medium",
+  FONT_Medium_Italic = "FONT_Medium_Italic",
+  FONT_Regular = "FONT_Regular",
+  FONT_Regular_Italic = "FONT_Regular_Italic",
+  FONT_Thin = "FONT_Thin",
+  FONT_Thin_Italic = "FONT_Thin_Italic",
+}
