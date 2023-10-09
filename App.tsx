@@ -28,6 +28,7 @@ export default function App() {
     FONT_Regular_Italic: require("./assets/fonts/Gilroy/Gilroy-RegularItalic.ttf"),
     FONT_Thin: require("./assets/fonts/Gilroy/Gilroy-Thin.ttf"),
     FONT_Thin_Italic: require("./assets/fonts/Gilroy/Gilroy-ThinItalic.ttf"),
+    HOUSC_Regular: require("./assets/fonts/Housck/HouschkaRoundedAlt-Regular2.ttf"),
   });
 
   if (!fontsLoaded) {
