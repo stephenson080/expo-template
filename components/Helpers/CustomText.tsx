@@ -1,9 +1,9 @@
 import { Text } from "react-native";
-import { Gilroy_FONTS, HOUSC_FONTS } from "../../utils/constants";
+import { Gilroy_FONTS, HOUSC_FONTS, Poppins_FONTS } from "../../utils/constants";
 
 type Props = {
   display: string;
-  font: Gilroy_FONTS | HOUSC_FONTS;
+  font: Gilroy_FONTS | HOUSC_FONTS | Poppins_FONTS;
   color?: string;
   italic?: boolean;
   fontSize?: number;

@@ -42,4 +42,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  padd: {
+    paddingHorizontal: 15,
+  },
 });

@@ -6,6 +6,7 @@ import {
 } from "@react-navigation/native";
 import HomeIndexScreen from "../../screens/home/index.screen";
 import HomeScreen from "../../screens/home/home.screen";
+import SubcriptionStack from "./subcriptionStack";
 // import { StyleSheet, Pressable } from "react-native";
 
 
@@ -23,6 +24,7 @@ export default function HomeStack(){
         <Navigator screenOptions={{headerShown: false}}>
           <Screen name="home-page" component={HomeScreen} />
           <Screen name="home-index" component={HomeIndexScreen} />
+          <Screen name="subscription" component={SubcriptionStack} />
         </Navigator>
     )
 }

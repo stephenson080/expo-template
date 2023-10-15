@@ -1,5 +1,5 @@
 import { ColorSchemeName, StyleSheet, View, Pressable } from "react-native";
-import { Colors, Gilroy_FONTS, HOUSC_FONTS } from "../../utils/constants";
+import { Colors, Gilroy_FONTS, HOUSC_FONTS, Poppins_FONTS } from "../../utils/constants";
 import CustomText from "../Helpers/CustomText";
 
 type Props = {
@@ -17,7 +17,7 @@ export function ActionCard(prop: Props) {
       <View style={styles.content}>
         <CustomText
           display={prop.details}
-          font={Gilroy_FONTS.FONT_Regular}
+          font={Poppins_FONTS.FONT_Medium}
           fontSize={10}
           lineHeight={15}
           textAlign="center"

@@ -6,7 +6,7 @@ import {
   Appearance,
   Dimensions,
 } from "react-native";
-import { Colors, Gilroy_FONTS, HOUSC_FONTS } from "../../utils/constants";
+import { Colors, Gilroy_FONTS, HOUSC_FONTS, Poppins_FONTS } from "../../utils/constants";
 import CustomText from "../../components/Helpers/CustomText";
 
 import OnboardLoginImages from "../../components/sections/Onboard-Login";
@@ -87,7 +87,7 @@ export default function OnboardLoginScreen({ navigation }: any) {
         </View>
         <CustomText
           display={"Register for Self Service"}
-          font={Gilroy_FONTS.FONT_Regular}
+          font={Poppins_FONTS.FONT_Regular}
           fontSize={10}
           fontWeight="bold"
           textAlign="center"

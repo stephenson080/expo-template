@@ -25,6 +25,13 @@ export default function HomeScreen({ navigation }: any) {
     return background === "dark";
   }
 
+  function navigateTo( title: string) {
+    if (title === 'Subcription'){
+      navigation.navigate('subscription')
+      return
+    }
+  }
+
   function getTheme() {
     const _colorScheme = Appearance.getColorScheme();
     setBackground(_colorScheme);
@@ -60,7 +67,7 @@ export default function HomeScreen({ navigation }: any) {
       </View>
 
       <Title theme={background} title="SELF SERVICE" count={0} />
-      <Services theme={background} onPress={() => {}} />
+      <Services theme={background} onPress={navigateTo} />
     </View>
   );
 }

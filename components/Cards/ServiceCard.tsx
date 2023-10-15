@@ -1,4 +1,4 @@
-import { StyleSheet, View, ColorSchemeName } from "react-native";
+import { StyleSheet, View, ColorSchemeName, Pressable } from "react-native";
 import Icon from "@expo/vector-icons/Ionicons";
 import { Colors, Gilroy_FONTS } from "../../utils/constants";
 import CustomText from "../Helpers/CustomText";
@@ -12,7 +12,7 @@ type Props = {
 
 export default function ServiceCard(props: Props) {
   return (
-    <View style={styles.card}>
+    <Pressable onPress={() => props.onPress(props.service.title)} style={styles.card}>
       <View style={styles.center}>{props.service.icon}</View>
       <View style={styles.content}>
         <View>
@@ -44,7 +44,7 @@ export default function ServiceCard(props: Props) {
           </View>
         )}
       </View>
-    </View>
+    </Pressable>
   );
 }
 

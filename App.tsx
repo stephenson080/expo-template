@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { LogBox, StyleSheet, Text, View } from 'react-native';
 import { useFonts } from "expo-font";
 import { NavigationContainer } from "@react-navigation/native";
 import { Provider } from 'react-redux';
@@ -10,7 +10,9 @@ import Main from './navigation/sections/main';
 
 import { store } from "./appStore/store";
 
-
+LogBox.ignoreLogs([
+  'Non-serializable values were found in the navigation state',
+]);
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -29,6 +31,17 @@ export default function App() {
     FONT_Thin: require("./assets/fonts/Gilroy/Gilroy-Thin.ttf"),
     FONT_Thin_Italic: require("./assets/fonts/Gilroy/Gilroy-ThinItalic.ttf"),
     HOUSC_Regular: require("./assets/fonts/Housck/HouschkaRoundedAlt-Regular2.ttf"),
+    Poppins_FONT_Black: require("./assets/fonts/Poppins/Poppins-Black.ttf"),
+    Poppins_FONT_Black_Italic: require("./assets/fonts/Poppins/Poppins-BlackItalic.ttf"),
+    Poppins_FONT_Bold: require("./assets/fonts/Poppins/Poppins-Bold.ttf"),
+    Poppins_FONT_Bold_Italic: require("./assets/fonts/Poppins/Poppins-BoldItalic.ttf"),
+    Poppins_FONT_Light: require("./assets/fonts/Poppins/Poppins-Light.ttf"),
+    Poppins_FONT_Light_Italic: require("./assets/fonts/Poppins/Poppins-LightItalic.ttf"),
+    Poppins_FONT_Medium: require("./assets/fonts/Poppins/Poppins-Medium.ttf"),
+    Poppins_FONT_Medium_Italic: require("./assets/fonts/Poppins/Poppins-MediumItalic.ttf"),
+    Poppins_FONT_Regular: require("./assets/fonts/Poppins/Poppins-Regular.ttf"),
+    Poppins_FONT_Thin: require("./assets/fonts/Poppins/Poppins-Thin.ttf"),
+    Poppins_FONT_Thin_Italic: require("./assets/fonts/Poppins/Poppins-ThinItalic.ttf"),
   });
 
   if (!fontsLoaded) {
